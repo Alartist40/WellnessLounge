@@ -6,10 +6,11 @@ import { Hand, Sparkles, Heart } from 'lucide-react'
 
 gsap.registerPlugin(ScrollTrigger)
 
+const base = import.meta.env.BASE_URL
 const serviceIcons = [
-  { icon: Hand, image: '/images/img-service-massage.jpg' },
-  { icon: Sparkles, image: '/images/img-service-facial.jpg' },
-  { icon: Heart, image: '/images/img-service-wellness.jpg' },
+  { icon: Hand, image: `${base}images/img-service-massage.jpg` },
+  { icon: Sparkles, image: `${base}images/img-service-facial.jpg` },
+  { icon: Heart, image: `${base}images/img-service-wellness.jpg` },
 ]
 
 export default function Services() {

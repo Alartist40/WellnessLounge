@@ -10,13 +10,14 @@ export default function Bridal() {
   const sectionRef = useRef<HTMLElement>(null)
   const blocksRef = useRef<(HTMLDivElement | null)[]>([])
 
+  const base = import.meta.env.BASE_URL
   const blocks = [
     {
       label: t('bridalLabel1'),
       title: t('bridalTitle1'),
       body: t('bridalBody1'),
       price: t('bridalPrice1'),
-      image: '/images/img-bridal-1.jpg',
+      image: `${base}images/img-bridal-1.jpg`,
       imageRight: true,
     },
     {
@@ -24,7 +25,7 @@ export default function Bridal() {
       title: t('bridalTitle2'),
       body: t('bridalBody2'),
       price: t('bridalPrice2'),
-      image: '/images/img-bridal-2.jpg',
+      image: `${base}images/img-bridal-2.jpg`,
       imageRight: false,
     },
   ]

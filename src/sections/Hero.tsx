@@ -1,12 +1,13 @@
 import { useLanguage } from '../hooks/useLanguage'
 import { ChevronDown } from 'lucide-react'
 
+const base = import.meta.env.BASE_URL
 const slides = [
-  '/images/img-hero-1.jpg',
-  '/images/img-hero-2.jpg',
-  '/images/img-hero-3.jpg',
-  '/images/img-hero-4.jpg',
-  '/images/img-hero-5.jpg',
+  `${base}images/img-hero-1.jpg`,
+  `${base}images/img-hero-2.jpg`,
+  `${base}images/img-hero-3.jpg`,
+  `${base}images/img-hero-4.jpg`,
+  `${base}images/img-hero-5.jpg`,
 ]
 
 export default function Hero() {
